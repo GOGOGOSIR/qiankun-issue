@@ -1,4 +1,3 @@
-
 import { loadMicroApp } from 'qiankun'
 import { useRouter } from 'vue-router'
 
