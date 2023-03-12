@@ -1,0 +1,10 @@
+node_modules
+*.log
+dist
+docs-dist
+coverage
+qiankun-micro-main
+qiankun-micro-webpack
+qiankun-micro-others
+qiankun-micro-vite
+.vscode
