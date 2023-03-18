@@ -5,11 +5,13 @@ export const initRouteGuard = (router) => {
     console.log(to.path)
     if (to.path === from.path) {
       // 子应用内部跳转的时候，由于 single-spa 的原因会重复触发一次
+      next()
       return
     }
 
     if (!to.path.startsWith(prefix)) {
       // 跳转至非该子应用的路由时无需处理
+      next()
       return
     }
 
